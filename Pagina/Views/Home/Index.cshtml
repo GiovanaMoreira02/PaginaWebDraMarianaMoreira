@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html>
+@model Pagina.Models.ContatoViewModel
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" media="screen" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="~/js/site.js"></script>
+
+    <meta charset="utf-8">
+
+    <title>Dra. Mariana Moreira</title>
+</head>
+
+<body>
+    <div id="pagina"></div>
+    <div class="conteudo">
+        <div style="color: white;" class="cabecalho">
+            <div class="logo"><img alt="Logotipo" src="~/Imagens/LOGO.png"></div>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#medidasUrgentes">Medidas Urgentes</a></li>
+                <li><a href="#areaAtuacao">Áreas de Atuação</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <div class="topoPagina">
+            <div id="img1"></div>
+            <div id="ctt1">
+                <div class="txt">
+                    <p>
+                        <h1>ADVOCACIA CRIMINAL</h1>
+                        <h3>ATENDIMENTO EMERGENCIAL 24H </h3>
+                        <br>
+                        <p" id="wpp">
+                            <a target="_blank"
+                               href="https://api.whatsapp.com/send?phone=5511983530688&text=Ol%C3%A1,%20visitei%20seu%20site%20e%20gostaria%20de%20iniciar%20meu%20atendimento.">
+                                <h4>Entre em contato</h4>
+                            </a>
+                            <img id="wp" alt="Ícone WhatsApp" src="~/Imagens/wpp.png" />
+                    </p>
+                    </p>
+                </div>
+                <br>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+
+        <div class="txt1">
+            <img id="marcadagua" alt="Marca d'água logotipo'" src="~/Imagens/MARCA_D_AGUA.png" />
+            <p>
+                Aqui você terá sua defesa criminal pensada estrategicamente, de forma pessoal, individualizada,
+                humanizada e artesanal,
+                pois nos comprometemos a lutar pelos seus direitos de forma única e especializada.
+            </p>
+            <p>
+                Você pode contar com a <strong>Dra. Mariana Moreira</strong> para defender seus direitos!
+            </p>
+            <p" id="wpp2">
+                <a target="_blank"
+                   href="https://api.whatsapp.com/send?phone=5511983530688&text=Ol%C3%A1,%20visitei%20seu%20site%20e%20gostaria%20de%20iniciar%20meu%20atendimento.">
+                    <h4>Plantão emergencial</h4>
+                </a>
+                <img id="wp2" alt="Ícone WhatsApp" src="~/Imagens/wpp.png" />
+                </p>
+        </div>
+        <br><br><br><br><br><br><br>
+
+        <div class="menuHorizontal">
+            <a name="medidasUrgentes"></a>
+            <p>MEDIDAS URGENTES - ATENDIMENTO 24H</p>
+            <img onclick="mostrarDiv(this)" alt="Seta para cima" id="setaMedidas" src="~/Imagens/setaCima.png">
+        </div>
+        <div style="display: block;" id="Medidas">
+            <p>
+                <ul>
+                    <li>B.O - Boletim de Ocorrência</li>
+                    <li>Prisão em Flagrante</li>
+                    <li>Prisão Preventiva/Temporária</li>
+                    <li>Audiência de Custódia</li>
+                </ul>
+                <ul style="float: right; position: relative; top:-135px; left: -30px;">
+                    <li>Revogação de Prisão</li>
+                    <li>Liberdade Provisória</li>
+                    <li>Habeas Corpus</li>
+                    <li>Intimação Policial - Acompanhamento 24h</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="areaAtuacao" class="menuHorizontal">
+            <a name="areaAtuacao"></a>
+            <p>ÁREAS DE ATUAÇÃO</p>
+            <img onclick="mostrarDiv(this)" alt="Seta para cima" id="setaArea" src="~/Imagens/setaCima.png">
+
+            <div style="display: block;" id="Area">
+                <ul>
+                    <li>Crimes Contra o Patrimônio</li>
+                    <li>Crimes decorrentes da Lei de Drogas</li>
+                    <li>Crimes Dolosos contra a vida - Tribunal do Júri</li>
+                    <li>Crimes Contra a Dignidade Sexual</li>
+                    <li>Crimes Contra a Honra</li>
+                    <li>Crimes decorrentes do Estatuto do Desarmamento</li>
+                    <li>Crimes de Trânsito</li>
+                    <li>Crimes Contra a Fé Pública</li>
+                    <li>Crimes contra a Ordem Econômica</li>
+                    <li>Crimes Contra o Sistema Financeiro Nacional</li>
+                </ul>
+                <ul style="float: right; position: relative; top:-320px; left: -20px;">
+                    <li>Crimes Contra a Propriedade Imaterial</li>
+                    <li>Crimes de Lavagem de Bens e Ativos</li>
+                    <li>Crimes Contra o Sistema Previdenciário</li>
+                    <li>Crimes Contra as Relações de Consumo</li>
+                    <li>Crimes Contra a Ordem Tributária</li>
+                    <li>Crimes em Licitações</li>
+                    <li>Crimes Contra a Administração Pública</li>
+                    <li>Crimes Ambientais</li>
+                    <li>Crimes Eleitorais</li>
+                    <li>Execução Criminal</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">E-mail enviado com sucesso!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    @*<div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                    </div>*@
+                    <div class="modal-footer">
+                        @*<button type="button" class="btn btn-primary">Save changes</button>*@
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <form action="/Home/EnviarEmail" method="post">
+            <div id="contato">
+                <a name="contato"></a>
+                <div class="menuHorizontal">
+                    <p>CONTATO</p>
+                    <img onclick="mostrarDiv(this)" alt="Seta para cima" id="setaContato" src="~/Imagens/setaCima.png">
+                </div>
+                <div style="display: block; color: white;" id="Contato" class="Contato">
+
+                    <div>
+                        <input type="text" id="nomeContato" name="nomeContato" placeholder="Nome" required>
+                    </div>
+                    <span asp-validation-for="nomeContato" class="tooltiptext"></span>
+                    <br>
+                    <br>
+
+                    <div>
+                        <input id="telefone" type="text" name="telefone" value="" placeholder="Telefone" required />
+                        @*<span asp-validation-for="telefone" class="text-danger"></span>*@
+                    </div>
+                    <span asp-validation-for="telefone" class="tooltiptext"></span>
+                    <br>
+                    <br>
+
+                    <div>
+                        <input id="email" type="text" name="email" placeholder="E-mail" required />
+                        @*<span asp-validation-for="email" class="text-danger"></span>*@
+                    </div>
+                    <span asp-validation-for="email" class="tooltiptext"></span>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div style="display: block; float: left;" id="assunto">
+                <select id="selecao" name="assunto">
+                    <option style="color: rgb(150, 144, 144);" selected value="0">Assunto</option>
+                    <option value="Orientação Prisão em Flagrante">Orientação Prisão em Flagrante</option>
+                    <option value="Audiência de Custódia">Audiência de Custódia</option>
+                    <option value="Recursos">Recursos</option>
+                    <option value="Análise Processual">Análise Processual</option>
+                    <option value="Ações Criminais">Ações Criminais</option>
+                    <option value="Habeas Corpus">Habeas Corpus</option>
+                </select>
+                <span asp-validation-for="assunto" class="tooltiptext"></span>
+            </div>
+
+            <button type="submit" onclick="EnviaEmail()"> Enviar </button>
+        </form>
+        
+    </div>
+    <br>
+    <br>
+
+    </div>
+    </div>
+
+    <div class="sep">
+        <p>Dra. Mariana Moreira</p>
+        <a name="sobre"></a>
+    </div>
+    <br>
+
+    <div class="sb2">
+        <div id="sb">
+            <div class="txt20">
+                <p>
+                    Fundadora do Escritório. Graduada em Direito pela Universidade Paulista – UNIP,
+                    pós Graduada em Prática Penal Avançada e membro da Comissão de Direito Penal de São Bernardo do
+                    Campo.
+                </p>
+                <p>
+                    Atuante em várias áreas do Direito Penal, representando os interesses de pessoas físícas e
+                    jurídicas, na condição de vítima ou acusado. Para tanto apresenta defesas técnicas e
+                    especilizada para
+                    obtenção do êxito, seja na fase pré-processual ou processual.
+                </p>
+            </div>
+            <br>
+        </div>
+        <div class="img2_">
+            <img id="img2" src="~/Imagens/foto.jpeg">
+        </div>
+    </div>
+
+    <footer style="position: relative; top:60px" class="rodape">
+        <div id="logo2">
+            <img id="logo2" src="~/Imagens/LOGO.png" />
+
+            <img id="insta" src="~/Imagens/insta.png" />
+            <p style="color: white" id="nome_insta">marianamoreira_adv</p>
+
+            <img id="wpp_" src="~/Imagens/wpp.png" />
+            <p style="color: white" id="num_wpp">(11) 98353-0688</p>
+
+            <img id="email" src="~/Imagens/email.png" />
+            <p style="color: white" id="nome_email">advocaciamarianamoreira@gmail.com</p>
+        </div>
+    </footer>
+
+    </div>
+</body>
+
+</html>

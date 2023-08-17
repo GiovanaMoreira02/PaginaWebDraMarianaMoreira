@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Imagens\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Imagens\email.png" />
+    <None Include="wwwroot\Imagens\foto.jpeg" />
+    <None Include="wwwroot\Imagens\img1.webp" />
+    <None Include="wwwroot\Imagens\insta.png" />
+    <None Include="wwwroot\Imagens\LOGO.png" />
+    <None Include="wwwroot\Imagens\MARCA_D_AGUA.png" />
+    <None Include="wwwroot\Imagens\setaBaixo.png" />
+    <None Include="wwwroot\Imagens\setaCima.png" />
+    <None Include="wwwroot\Imagens\wpp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.DirectoryServices.Protocols" Version="7.0.1" />
+  </ItemGroup>
+
+  <!--<system.net>
+    <mailConfigurações>
+      <smtp>
+        <network host="smtpserver1" port="587" userName="giovana.moreira30@icloud.com" password="@Gabriele500#" defaultCredentials="true" />
+      </smtp>
+    </mailConfigurações>
+  </system.net>-->
+
+</Project>

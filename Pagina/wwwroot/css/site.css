@@ -1,0 +1,548 @@
+html {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #c0c0c0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+div {
+    width: 100%;
+    /* height: 100%; */
+    display: inline-block;
+    position: relative;
+    left: -5px;
+}
+
+nav {
+    width: 1500px;
+    background-color: #343333;
+    border: 15px solid #343333;
+    position: relative;
+    top: -25px;
+    left: -6px;
+}
+
+.menu {
+    list-style: none;
+    border: 20px solid #343333;
+    position: relative;
+    left: 460px;
+    top: 15px;
+    width: 100%;
+}
+
+    .menu li {
+        position: relative;
+        float: left;
+        border-right: 1px solid white;
+        top: -15px;
+    }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+            .menu li a:hover {
+                background: #333;
+                color: #fff;
+                text-shadow: 0px 0px 5px #fff;
+            }
+
+        .menu li ul {
+            position: absolute;
+            top: 25px;
+            left: 0;
+            background-color: white;
+            display: none;
+        }
+
+.cabecalho {
+    width: 100vw;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    top: -25px;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #343333;
+}
+
+    .logo img {
+        background-image: url(../Imagens/LOGO.png);
+        width: 325px;
+        height: 200px;
+        background-repeat: repeat-x;
+        display: inline-flex;
+        text-align: center;
+    }
+
+.topoPagina {
+    position: relative;
+    width: 2000px;
+}
+
+#img1 {
+    background-image: url(../Imagens/img1.webp);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: normal;
+    flex-shrink: 0;
+    width: 760px;
+    min-height: 400px;
+    float: left;
+    position: relative;
+    top: -20px;
+    left: -17px;
+}
+
+#ctt1 {
+    background-color: #343333;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: normal;
+    flex-shrink: 0;
+    width: 740px;
+    min-height: 400px;
+    float: right;
+    position: relative;
+    left: 5px;
+    top: -20px;
+    left: -510px;
+}
+
+#marcadagua {
+    opacity: 0.5;
+    height: 250px;
+}
+
+div.txt {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 100px;
+}
+
+#wpp {
+    border: 1px solid #0BA360;
+    background-color: #0BA360;
+    border-radius: 35px;
+    height: 50px;
+    width: 300px;
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+}
+
+div.txt h4 {
+    color: white;
+    position: relative;
+    left: 26px;
+    bottom: 7px;
+    top: 5px;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    color: white;
+    position: relative;
+    text-align: center;
+    border: 1px solid;
+    background-color: #E0AA3E;
+    left: 350px;
+    width: 400px;
+}
+
+div.txt1 {
+    font-size: 25px;
+    position: relative;
+    left: 75px;
+    text-align: center;
+}
+
+div.txt h1 {
+    font-size: 40px;
+}
+
+div.txt h3 {
+    font-size: 20px;
+}
+
+div.txt1 p {
+    font-size: 27px;
+    font-family: system-ui;
+}
+
+div.txt1 h4 {
+    position: relative;
+    left: 13px;
+    bottom: 25px;
+    font-size: 25px;
+    white-space: nowrap;
+    top: 5px;
+}
+
+#wp {
+    right: 15px;
+    size: 10px;
+    position: relative;
+    left: 22px;
+}
+
+.menuHorizontal p {
+    border: 2px black;
+    background-color: #343333;
+    position: relative;
+    color: white;
+    font-size: 23px;
+    width: 1000px;
+    left: 218px;
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+#setaMedidas {
+    position: relative;
+    width: 40px;
+    float: right;
+    right: 130px;
+    top: -50px;
+}
+
+#Medidas {
+    background-color: #343333;
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    top: -58px;
+    left: 214px;
+    font-family: system-ui;
+    font-size: 23px;
+    color: white;
+}
+
+    #Medidas ul {
+        position: relative;
+        top: 30px;
+    }
+
+#Area {
+    background-color: #343333;
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    top: -15px;
+    left: 218px;
+    font-family: system-ui;
+    font-size: 23px;
+    color: white;
+}
+
+    #Area ul {
+        position: relative;
+        top: 30px;
+    }
+
+#wp2 {
+    size: 10px;
+    position: relative;
+}
+
+#setaArea {
+    position: relative;
+    width: 40px;
+    float: right;
+    right: 130px;
+    top: -52px;
+}
+
+#setaContato {
+    position: relative;
+    width: 40px;
+    float: right;
+    right: 130px;
+    top: -52px;
+}
+
+#contato {
+    position: relative;
+    top: -120px;
+}
+
+div.Contato input {
+    display: block;
+    border: 2px solid black;
+    width: 400px;
+    height: 43px;
+    position: relative;
+    left: 20px;
+    font-size: 15px;
+    top: 27px;
+}
+
+div.Contato {
+    background-color: #333;
+    background-color: #343333;
+    position: relative;
+    width: 1000px;
+    /* height: 240px; */
+    height: 270px;
+    top: -42px;
+    left: 213px;
+    font-family: system-ui;
+    font-size: 23px;
+    color: white;
+}
+
+#telefone {
+    position: relative;
+    top: -2px;
+}
+
+#email {
+    position: relative;
+    top: -31px;
+}
+
+#selecao {
+    border: 2px solid black;
+    width: 400px;
+    height: 40px;
+    position: relative;
+    font-size: 15px;
+    top: -258px;
+    left: 228px;
+}
+
+div.sep p {
+    color: white;
+    background-color: #333;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+div.sb2 {
+    display: flex;
+    position: relative;
+    left: 75px;
+}
+
+div.txt20 {
+    color: white;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    text-align: justify;
+    font-size: 25px;
+    top: 20px;
+    left: 30px;
+    font-family: system-ui;
+}
+
+#img2_ {
+    box-sizing: border-box;
+}
+
+#img2 {
+    height: 450px;
+    max-width: 50%;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #343333;
+    float: right;
+    position: relative;
+    right: 190px;
+    left: -313px;
+    float: inline-start;
+}
+
+#sb {
+    border: 15px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: normal;
+    flex-shrink: 0;
+    width: 670px;
+    min-height: 0px;
+    background-color: #343333;
+    position: relative;
+    left: 150px;
+    height: 450px;
+}
+
+#wpp2 {
+    border: 1px solid #0BA360;
+    background-color: #0BA360;
+    border-radius: 35px;
+    height: 50px;
+    width: 300px;
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+}
+
+a {
+    color: white;
+}
+
+#p1 {
+    width: 700px;
+    display: inline-table;
+    text-align: justify;
+}
+
+.rodape {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #343333;
+}
+
+#logo2 {
+    height: auto;
+    max-width: 40%;
+    max-height: 45%;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    float: inline-start;
+    position: relative;
+    left: 20px;
+}
+
+#insta {
+    height: auto;
+    max-width: 25%;
+    max-height: 15%;
+    float: right;
+    position: relative;
+    left: 550px;
+    top: -10px;
+}
+
+#nome_insta {
+    height: auto;
+    max-width: 5%;
+    max-height: 9%;
+    float: right;
+    position: relative;
+    left: 680px;
+    top: 15px;
+}
+
+#wpp_ {
+    height: auto;
+    max-width: 15%;
+    max-height: 18%;
+    float: right;
+    position: relative;
+    left: 696px;
+    top: 50px;
+}
+
+#num_wpp {
+    height: auto;
+    max-width: 100%;
+    max-height: 9%;
+    float: right;
+    position: relative;
+    left: 620px;
+    top: -82px;
+}
+
+#email {
+    height: 43px;
+    max-width: 100%;
+    float: right;
+    position: relative;
+    left: -580px;
+    top: -30px;
+}
+
+#nome_email {
+    height: auto;
+    max-width: 5%;
+    max-height: 9%;
+    float: right;
+    position: relative;
+    left: 680px;
+    top: -42px;
+}
+
+/* button{
+    position: relative;
+    top: -273px;
+    left: 700px;
+    height: 35px;
+    width: 90px;
+} */
+
+button {
+    position: relative;
+    height: 35px;
+    width: 90px;
+    left: 223px;
+    top: -248px;
+}
+
+.asterisco {
+    color: red;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 300px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: #ff0000;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
